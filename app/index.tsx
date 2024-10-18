@@ -5,7 +5,7 @@ import { Redirect } from "expo-router";
 export default function Welcome() {
 	return (
 		<View style={styles.container}>
-			<Redirect href="/(tabs)" />
+			<Redirect href="/(tabs)/home" />
 
 			{/* <Text>Welcome</Text> */}
 		</View>

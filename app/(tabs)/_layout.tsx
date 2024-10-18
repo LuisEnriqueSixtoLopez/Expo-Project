@@ -42,24 +42,24 @@ export default function RootLayout() {
 				headerShown: false,
 			}}
 		>
-			{/* <Tabs.Screen
-					name="(home)"
-					options={{
-						title: "Home",
+			<Tabs.Screen
+				name="home"
+				options={{
+					title: "Home",
 
-						tabBarIcon: ({ color, focused }) => (
-							<TabBarIcon
-								name={focused ? "home" : "home-outline"}
-								color={color}
-							/>
-						),
-					}}
-				/> */}
+					tabBarIcon: ({ color, focused }) => (
+						<TabBarIcon
+							name={focused ? "home" : "home-outline"}
+							color={color}
+						/>
+					),
+				}}
+			/>
 			<Tabs.Screen
 				name="index"
 				options={{
 					title: "Home",
-
+					tabBarItemStyle: { display: "none" },
 					tabBarIcon: ({ color, focused }) => (
 						<TabBarIcon
 							name={focused ? "home" : "home-outline"}
